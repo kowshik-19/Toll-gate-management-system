@@ -1,0 +1,82 @@
+body{
+	background-image: url('https://media.istockphoto.com/id/1136593344/photo/cars-and-trucks-waiting-at-point-of-toll-highway-toll-station-check-point-traffic-jam-highway.jpg?s=612x612&w=0&k=20&c=zYaV_7_fe-1nzsET7e-7Vrfr3dEGSloXwINZq7xjuZE=');
+	background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+.heading{
+	text-align: center;
+}
+
+.login{
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    width: 400px;
+    border: 12px #a1beba;
+	background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    /* box-shadow: 10px 10px #dfddc7; */
+}
+
+.lead{
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-family: serif;
+	font-size: 20pt;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.but {
+	background-color: #4CAF50;
+	margin-bottom: 15px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+
+input[type=text], input[type=password]{
+	width: 380px;
+	border-radius: 4px;
+	padding: 12px;
+	text-align: center;
+	left: 50%;
+	margin-top: 10px;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+input[type=submit]{
+	width: 410px;
+	border-radius: 4px;
+	padding: 12px;
+	background-color: #16c79a;
+	border: 10px #16c79a;
+	text-align: center;
+	left: 50%;
+	margin-top: 10px;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+label{
+	margin-bottom: 10pt;
+}

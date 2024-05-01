@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-business-background-employee-logo-cohesive-strength-create-brilliant-image_256581.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+  }
+  
+  
+.heading{
+    background-color: rgb(70, 70, 169);
+    padding: 10px;
+    text-align:center;
+    font-size: 35px;
+    color: white;
+  }
+
+  
+nav {
+    font-size: large;
+    float: left;
+    width: 20%;
+    height: 70%; 
+    background: #ccc;
+    padding: 20px;
+    background-color: antiquewhite;
+  }
+
+.btn {
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
