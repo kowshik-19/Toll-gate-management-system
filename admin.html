@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" type="text/css" href="public\admin.css">
+</head>
+<body>
+    <header class="heading">
+        <h1>Welcome Admin</h1>
+    </header>
+      
+    <section class="container">
+        <nav>
+          <ul>
+            <li><a href="faredetails.html">Toll Fare details</a></li><br>
+            <li><a href="tollrecords.html">Toll Records</a></li><br>
+            <li><a href="staffdetails.html">Edit Staff details</a></li><br>
+            <li><a href="#">user feedback</a></li><br>
+            <button class="btn" id="logoutBtn">Logout</button>
+            <script>
+                document.getElementById("logoutBtn").addEventListener("click", function() {
+                    window.history.replaceState({}, document.title, "loginpage.html");
+                    window.location.href = "loginpage.html";
+               });
+            </script>
+          </ul>
+        </nav>
+    </section>
+</body>
+</html>

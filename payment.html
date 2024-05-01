@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" type="text/css" href="public\payment.css">
+</head>
+<body>
+    <h1>Payment Portal</h1>
+    <form id="payment-form">
+        <label for="journey-type">Select Journey Type:</label>
+        <select id="journey-type" name="journey-type">
+            <option value="single">Single Journey</option>
+            <option value="return">Return Journey</option>
+            <option value="monthly">Monthly Pass</option>
+        </select><br><br>
+
+        <label for="vehicle-type">Select Vehicle Type:</label>
+        <select id="vehicle-type" name="vehicle-type">
+            <option value="car">Car/Jeep/Van</option>
+            <option value="lcv">LCV</option>
+            <option value="bus">Bus/Truck</option>
+            <option value="4-6-axle">4 to 6 Axle</option>
+            <option value="hcm-eme">HCM/EME</option>
+            <option value="7-more-axle">7 or More Axle</option>
+        </select><br><br>
+
+        <button type="button" id="calculate-fare">Calculate Fare</button><br><br>
+        <div id="fare-details">
+            <a href="faredetails.html"></a>
+        </div>
+    </form>
+
+    <script src="payment.js"></script><br>
+    <img src="QR.jpg" class="qr">
+</body>
+</html>

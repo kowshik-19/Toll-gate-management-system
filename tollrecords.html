@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Add / View Toll Entries
+	</title>
+	<link rel="stylesheet" type="text/css" href="public\tollrecords.css">
+</head>
+
+<body>
+	<header>
+        <h1>Toll Charge Details</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Home</a></li>
+                <li><a href="tollrecords.html">Records</a></li>
+                <li><a href=".html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<div id="formContainer">
+		<h2>Add new Vehicle Entry Details here:</h2>
+		<div>
+			<label for="vehiclenumber">
+				Vehicle Number:
+			</label>
+			<input type="text"
+				id="vehiclenumber"
+				placeholder="Enter vehicle Number"><br>
+		</div>
+
+		<div>
+			<label for="drivername">
+				Driver name:
+			</label>
+			<input type="text"
+				id="drivername"
+				placeholder="Enter Driver's Name"><br>
+		</div>
+
+		<div>
+			<label for="vehicletype">
+				Vehicle Type:
+			</label>
+			<input type="text"
+				id="vehicletype"
+				placeholder="Enter Vehicle Type"><br>
+		</div>
+
+        <div>
+			<label for="entrytime">
+				Vehicle Entry Time:
+			</label>
+			<input type="time"
+				id="entrytime"
+				placeholder="Enter Vehicle Entry Time"><br>
+		</div>
+
+        <!-- <div>
+			<label for="tollcharge">
+				Toll Charge:
+			</label>
+			<input type="number"
+				id="tollcharge"
+				placeholder="Enter Toll Charge"><br>
+		</div> -->
+
+		<button onclick="addData()">
+			Add
+		</button><br>
+	</div>
+
+	<div id="tablecontainer">
+		<h2>View and edit Vehicle details here:</h2>
+	<table id="outputTable">
+		<tr>
+			<th>vehiclenumber</th>
+			<th>drivername</th>
+			<th>vehicletype</th>
+			<th>entrytime</th>
+			<th>tollcharge</th>
+		</tr>
+	</table>
+	</div>
+	<script>
+		function addData() {
+			let vehiclenumber =
+				document.getElementById("vehiclenumber").value;
+			let drivername =
+				document.getElementById("drivername").value;
+			let vehicletype =
+				document.getElementById("vehicletype").value;
+			let entrytime =
+				document.getElementById("entrytime").value;
+			
+			let table = document.getElementById("outputTable");
+			let newRow = table.insertRow(table.rows.length);
+
+			newRow.insertCell(0).innerHTML = vehiclenumber;
+			newRow.insertCell(1).innerHTML = drivername;
+			newRow.insertCell(2).innerHTML = vehicletype;
+			newRow.insertCell(3).innerHTML = entrytime;
+			newRow.insertCell(4).innerHTML = tollcharge;
+
+            if (!vehiclenumber || !drivername || !vehicletype || !entrytime || !tollcharge) {
+                alert("Please fill all fields before proceeding");
+                return;
+            }
+			
+			clearInputs();
+		}
+
+		function clearInputs() {
+
+			document.getElementById("vehiclenumber").value = "";
+			document.getElementById("drivername").value = "";
+			document.getElementById("vehicletype").value = "";
+			document.getElementById("entrytime").value = "";
+			document.getElementById("tollcharge").value = "";
+		}
+	</script>
+</body>
+
+</html>

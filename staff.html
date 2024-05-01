@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" type="text/css" href="public\staff.css">
+</head>
+<body>
+    <header class="heading">
+        <h1>Welcome</h1>
+    </header>
+      
+    <section>
+        <nav>
+          <ul>
+            <li><a href="faredetails.html">Toll Fare details</a></li><br>
+            <li><a href="tollrecords.html">view/Record a vehicle entry</a></li><br>
+            <li><a href="payment.html">Make a payment</a></li><br>
+
+            <button class="btn" id="logoutBtn">Logout</button>
+            <script>
+                document.getElementById("logoutBtn").addEventListener("click", function() {
+                    window.history.replaceState({}, document.title, "loginpage.html");
+                    window.location.href = "loginpage.html";
+               });
+            </script>
+          </ul>
+        </nav>
+    </section>
+</body>
+</html>
